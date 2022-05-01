@@ -1,3 +1,4 @@
 # For more info take a look at documentation in the settings module.
 bind: "127.0.0.1:8080"
 log_level: INFO
+jwt_secret: "secretJWTsecret"

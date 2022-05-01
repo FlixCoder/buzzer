@@ -2,6 +2,7 @@
 
 use color_eyre::Result;
 
-fn main() -> Result<()> {
-	Ok(())
+#[tokio::main]
+async fn main() -> Result<()> {
+	buzzer::run().await
 }

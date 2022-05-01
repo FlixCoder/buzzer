@@ -23,8 +23,8 @@ jobs:
         components: rustfmt, clippy
     - name: Style
       run: cargo +nightly fmt -- --check
-    - name: Install cargo-lints
-      run: cargo install --git https://github.com/FlixCoder/cargo-lints
+    - name: Install cargo-lints and wasm-pack
+      run: cargo install wasm-pack && cargo install --git https://github.com/FlixCoder/cargo-lints
     - name: Check and Clippy
       run: cargo lints clippy --all-targets --workspace -- -D warnings
     - name: Run tests
