@@ -11,6 +11,7 @@ RUN apt update -yqq \
 
 COPY . /app
 WORKDIR /app
+RUN cargo install wasm-pack
 RUN cargo build --release
 
 
